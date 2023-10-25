@@ -24,7 +24,7 @@ if st.button('Generate Images'):
     for i in range(num_images):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         # Limit the length of the prompt and replace spaces with underscores
-        short_prompt = prompt[:20].replace(" ", "_")
+        short_prompt = prompt[:10].replace(" ", "_")
         # Replace any other invalid characters
         valid_filename = "".join(c for c in short_prompt if c.isalnum() or c in "_-")
         filename = f'output_{valid_filename}_{timestamp}_{i}.png'
