@@ -2,6 +2,7 @@ import streamlit as st
 from diffusers import StableDiffusionXLPipeline
 import torch
 from datetime import datetime
+print(torch.cuda.is_available())
 
 @st.cache_resource
 def load_model():
