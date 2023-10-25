@@ -1,0 +1,6 @@
+streamlit
+git+https://github.com/huggingface/diffusers
+diffusers
+transformers
+accelerate
+safetensors
