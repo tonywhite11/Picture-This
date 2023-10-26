@@ -4,7 +4,7 @@ import torch
 from datetime import datetime
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-pipe = StableDiffusionXLPipeline.from_pretrained("segmind/SSD-1B", torch_dtype=torch.float16, use_safetensors=True, variant="fp16")
+pipe = StableDiffusionXLPipeline.from_pretrained("segmind/SSD-1B", torch_dtype=torch.float32, use_safetensors=True, variant="fp32")
 pipe.to(device)
 
 # Streamlit app
